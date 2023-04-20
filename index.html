@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+            <div class="img_logo">
+                <img src="img/logo.png" alt="logo alura" width="60" height="40">
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col">
+
+                    <textarea class="text_area_enc" name="encr_desc" id="encr_desc" cols="35" rows="18" placeholder="Ingrese el texto aqui"></textarea>
+                    <p>&#x26A0;&#xFE0F Solo letras minusculas y sin acentos</p>
+                    <div class="encr_desc">
+                        <input class="btn_enc" type="button" onclick="encr_desc()" value="Encriptar!">
+                        <input class="btn_descr" type="button" onclick="desencr_desc()" value="Desencriptar!">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="desencr_desc">
+                        <textarea class="resultado_a" name="resultado" id="resultado" cols="35" rows="18"></textarea>
+                        <input class="btn_copiar" onclick="copiar()" type="button" value="Copiar">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="function.js"></script>
+
+</html>

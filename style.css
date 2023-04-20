@@ -1,0 +1,162 @@
+    body {
+        padding: 20px;
+        background: whitesmoke;
+    }
+    
+    .img_logo {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    
+    .row {
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+    
+    .text_area_enc {
+        resize: none;
+        margin-bottom: 20px;
+        border-color: whitesmoke;
+        background: whitesmoke;
+        width: 80%;
+        font-size: 20px;
+    }
+    
+    .resultado_a {
+        resize: none;
+        width: 45%;
+        height: 100%;
+        margin-bottom: 20px;
+        border-color: white;
+        border-radius: 15px;
+        pointer-events: none;
+    }
+    
+    .btn_enc {
+        background: rgba(19, 19, 71, 0.61);
+        color: whitesmoke;
+        border-radius: 15px;
+        width: 11rem;
+        height: 3rem;
+        font-size: 20px;
+    }
+    
+    .btn_enc:hover {
+        background: rgba(1, 1, 24, 0.61);
+        transition: 1s;
+        transform: scale(1.1);
+    }
+    
+    .btn_descr {
+        border-color: rgba(19, 19, 71, 0.61);
+        color: gray;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        width: 11rem;
+        height: 3rem;
+        font-size: 20px;
+    }
+    
+    .btn_descr:hover {
+        border-color: rgba(41, 124, 8, 0.61);
+        transition: 1s;
+        transform: scale(1.1);
+    }
+    
+    .btn_copiar {
+        border-color: rgba(19, 19, 71, 0.61);
+        color: gray;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        width: 11rem;
+        height: 3rem;
+        font-size: 20px;
+    }
+    
+    .btn_copiar:hover {
+        border-color: rgba(14, 72, 180, 0.61);
+        transition: 1s;
+        transform: scale(1.1);
+    }
+    
+    .desencr_desc {
+        width: 40%;
+        height: 100%;
+        resize: none;
+        border-color: white;
+        background: white;
+        border-radius: 15px;
+        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    
+    .encr_desc {
+        display: flex;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    @media screen and (max-width:480px) {
+        body {
+            padding: 5px;
+            background: whitesmoke;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 45% 55%;
+        }
+        .desencr_desc {
+            width: 50%;
+            height: 100%;
+            resize: none;
+            border-color: white;
+            background: white;
+            border-radius: 15px;
+            display: grid;
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+        .btn_enc {
+            border-radius: 15px;
+            width: 5rem;
+            height: 2rem;
+            font-size: 10px;
+        }
+        .btn_descr {
+            border-color: rgba(19, 19, 71, 0.61);
+            color: gray;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            width: 5rem;
+            height: 2rem;
+            font-size: 10px;
+        }
+        .btn_copiar {
+            border-color: rgba(19, 19, 71, 0.61);
+            color: gray;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            width: 3rem;
+            height: 2rem;
+            font-size: 10px;
+        }
+        .resultado_a {
+            resize: none;
+            width: 40%;
+            height: 100%;
+            margin-bottom: 20px;
+            border-color: white;
+            border-radius: 15px;
+            pointer-events: none;
+        }
+    }
